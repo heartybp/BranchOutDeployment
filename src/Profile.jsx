@@ -10,12 +10,13 @@ import ConnectionSection from "./components/ConnectionSection.jsx";
 import Header from "./components/Header.jsx";
 import Edit from "./components/Edit.jsx";
 import About from "./components/About.jsx";
+import Avatar1 from "./assets/avatar1.png";
 
 const user = {
   firstName: "Jane",
   lastName: "Doe",
   school: "University of California, Irvine",
-  avatar: "src/assets/jane-doe.png",
+  avatar: { Avatar1 },
   joinDate: "2025-03-08",
   treeImage: "src/assets/tree.png",
   aboutMe:

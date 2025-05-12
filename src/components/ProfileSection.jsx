@@ -3,6 +3,7 @@ import { Leaf } from "lucide-react";
 import { useState } from "react";
 import { Users, Pencil } from "lucide-react";
 import Tree from "../assets/tree.svg";
+import Avatar1 from "../assets/Profile.png";
 
 // ---------- Use LinkedIn as reference --------- //
 /*
@@ -44,7 +45,7 @@ const ProfileSection = ({ user, onEditClick, isEditing }) => {
       {/* Profile Banner */}
       <div className="w-full h-[300px] bg-brandGreen relative">
         <img
-          src={user.avatar}
+          src={Avatar1}
           className="w-60 h-60 rounded-full border-4 border-white absolute left-1/2 transform -translate-x-1/2 bottom-[-4rem] object-cover"
         />
         <div className="w-[80px] h-[80px] flex flex-col justify-center items-center absolute right-[450px] translate-x-16 bottom-[-4rem] bg-brandGreen p-0 rounded-full border-4 border-white">

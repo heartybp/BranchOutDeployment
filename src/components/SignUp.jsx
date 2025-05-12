@@ -12,6 +12,10 @@ import {
 } from "@ant-design/icons";
 import { Leaf, School } from "lucide-react";
 
+// Import images
+import loginCover from "../assets/login-cover.jpg";
+import branchOutLogo from "../assets/branchOUT-Logo.png";
+
 const SignUp = () => {
   const navigate = useNavigate();
 
@@ -30,9 +34,9 @@ const SignUp = () => {
   return (
     <div className="flex h-screen text-[#F5F5DC]">
       <div className="relative w-3/5 pr-4 h-full bg-brandGreen">
-        <img className="w-full h-2/3" src="/src/assets/login-cover.jpg" />
+        <img className="w-full h-2/3" src={loginCover} />
         <div className="flex w-full h-1/3 px-10">
-          <img className="w-1/2 h-full" src="/src/assets//branchOUT-Logo.png" />
+          <img className="w-1/2 h-full" src={branchOutLogo} />
           <div className="w-1/2 mt-auto text-right mb-4">
             <div className="text-[60px] font-bold">branchOUT</div>
             <div className="text-[28px]">grow your network</div>
