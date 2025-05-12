@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignUp from "./components/SignUp.jsx";
 import Login from "./components/Login.jsx";
 import Home from "./Home.jsx";
@@ -13,7 +13,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename="/BranchOutDeployment/">
       <Routes>
         <Route path="/" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
@@ -25,7 +25,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/resources" element={<Resources />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
